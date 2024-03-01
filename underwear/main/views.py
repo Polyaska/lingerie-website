@@ -26,7 +26,7 @@ def login(request):
         form = LoginForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('news_home')
+            return redirect('home')
         else:
             error = 'Форма была неверной'
     form = LoginForm()

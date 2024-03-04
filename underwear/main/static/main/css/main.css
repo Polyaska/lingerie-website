@@ -1,16 +1,19 @@
 body {
-    background: aliceblue;
+    background: #FFFAFA;
 }
 
 aside {
     display: inline-block;
     justify-content: center;
-    background: cadetblue;
+    background: #FFFAFA;
     text-align: center;
     width: 100%;
     height: 10vh;
-    color: aliceblue;
-    border: 2px solid cadetblue;
+    color: #696969;
+    border: 1px solid #696969;
+    font-style: normal;
+    font-variant: small-caps;
+    font-weight: 400;
 }
 
 aside img {
@@ -22,9 +25,11 @@ aside .logo {
     font-size: 40px;
     float: left;
     margin-left: 10px;
-    font-weight: bold;
+    font-weight: 100;
     position: relative;
     top: -5px;
+    font-style: normal;
+    font-variant: small-caps;
 }
 
 aside h3 {
@@ -37,27 +42,33 @@ aside ul {
 }
 
 aside ul li {
-    color: aliceblue;
+    color: #696969;
     display: inline-block;
     justify-content: center;
     text-align: center;
     margin-top: 10px;
     transition: transform 0.5s ease;
-    border: 10px solid cadetblue;
+    border: 10px solid #FFFAFA;
+    font-style: normal;
+    font-variant: small-caps;
+    font-weight: 400;
 }
 
 aside ul li:hover, aside ul a:hover{
-    color: antiquewhite;
+    color: #A9A9A9;
     text-decoration: none;
     transform: scale(1.05);
 }
 
 main .features {
     float: left;
-    color: cadetblue;
+    color: #696969;
     margin-top: 100px;
     text-align: center;
     width: 75%;
+    font-style: normal;
+    font-variant: small-caps;
+    font-weight: 400;
 }
 
 main .features h1{
@@ -67,6 +78,9 @@ main .features h1{
     width: 400px;
     margin: 20px 50%;
     text-align: left;
+    font-style: normal;
+    font-variant: small-caps;
+    font-weight: 400;
 }
 
 main .features p {

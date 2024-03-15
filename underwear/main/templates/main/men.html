@@ -1,0 +1,36 @@
+{% extends 'main/layout.html' %}
+
+<title>
+    {% block title %}
+    Мужчине
+    {% endblock %}
+</title>
+
+{% block content %}
+    <div class="features">
+        <h1>Мужчине</h1>
+    </div>
+    <div class="block">
+        {% for product in goods_men %}
+            <div class="col-lg-4 col-md-6 p-4">
+                <div class="card border-primary rounded custom-shadow">
+                    {% load static %}
+                    <img src="{% static product.image %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <a href="#">
+                            <p class="card-title">{{ product.name }}</p>
+                        </a>
+                        <p class="card-text text-truncate">{{ product.description }}</p>
+                        <div class="d-flex justify-content-between">
+                            <p><strong>{{ product.price }} руб</strong></p>
+                            <a href="#" class="btn add-to-cart">
+                                <i class="bi bi-bag-heart-fill" ></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}
